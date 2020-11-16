@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+        <meta charset="utf-8"> 
+        <title> Portfolio web page </title>
+        <link rel="icon" href="images/icon.JPG">
+        <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body>
+
+        <!-- Header -->  
+        <header>
+            <!-- Home,About,Work,Resume,Contact -->  
+            <nav class="topnav">
+                
+                <a href="#home"> Home </a>                
+                <a href="#about"> About </a>
+                <a href="#skills"> Skills </a>              
+                <a href="#resume"> Resume </a>              
+                <a href="#contact"> Contact </a>
+                 
+            </nav>
+
+        </header>
+        
+ 
+        <!-- Main -->
+        
+         <main>  
+            <!--Create the “About” section,”Work” Section,”Resume” Section,”Contact”Section(Using HTML Forms)-->   
+            <section class="home">
+                <a name="home"> </a>
+                <aside class="contenant">
+                    <img src="images/home.jpg" alt="Home">
+                </aside>
+                <aside class="citation">
+                    <i>"Success is a bad teacher. He makes smart people believe they are infallible"</i>
+                </aside>
+            </section>
+            
+            <section class="about"> <!--Section About --> 
+                <a name="about"> </a>
+                <aside class="contenant">
+                    <img src="images/about.jpg" alt="About">
+                    <div class="texte_centrer">
+                        <h1 id="texte_centrer_black">About</h1>
+                    </div>
+                </aside>
+                <aside class="first-aside">
+                    <h1>I'm Syfax Acherfouche, 22 years old</h1>
+                    <h2>Full-Stack JS Web Development Apprentice at GoMyCode</h2>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/olJOZp57FWM" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    
+                </aside>	
+                <aside class="second-aside"> 
+                    <div>
+                    <h1>Young and passionate, this is who I am</h1>	
+                    </div>
+                </aside>
+
+
+                <hr>
+               
+            </section>
+            
+            <section class="skills"> <!-- Section Skills à la place de WORK vu que je n'ai encore rien à mettre dans une section Work -->
+                
+                <!-- NB: je ne maitrise pas tous ce que vous trouverez ci-dessous -->
+
+                <a name="skills"> </a>
+                <aside class="contenant">
+                    <img src="images/skills.png" alt="Skills">
+                    <div class="texte_centrer">
+                        <img src="images/html.png" alt="html">
+                        <img src="images/css.png" alt="css">
+                        <img src="images/js.png" alt="javascript">
+                        <img src="images/sass.png" alt="sass">
+                    </div>
+                </aside>
+                
+            </section>   
+                
+            
+            <section class="resume"> <!--Section Resume--> 
+                <a name="resume"> </a>
+                <aside class="contenant">
+                    <img src="images/resume.jpg" alt="Resume">
+                </aside>
+                <aside>
+                    <h2>Study and Diploma</h2>
+                    <ul>
+                        <li><b>2020 :</b> Troisième année Licence L.M.D, spécialisation en Finances des Banques et des Assurances, à l’université Mouloud Mammeri, Tizi-Ouzou. (année en cours).</li>
+                        <li><b>2019 :</b> Deuxième année Licence L.M.D, Spécialisation en Sciences Financières et Comptabilité, à l’université Mouloud Mammeri, Tizi-Ouzou.</li>
+                        <li><b>2018 :</b> Attestation de suivi avec succès du MOOC « Créateur d’une micro-entreprise » proposé par le Centre National de la Fonction Publique Territoriale (CNFPT), diffusé sur la plate-forme France Université Numérique (FUN).</li>
+                        <li><b>2018 :</b> Attestation de collaboration dans le numéro  01 du journal «  La Gazette de l’étudiant » de la faculté des Sciences Humaine  et Sociales de l’Université Mouloud Mammeri de Tizi-Ouzou.</li>
+                        <li><b>2018 :</b> Première année Licence L.M.D en  Sciences Économiques, de Gestion et Commerciales, à l’Université Mouloud Mammeri, Tizi-Ouzou.</li>
+                        <li><b>2017 :</b> Brevet de plongeur premier degré, FEDERATION ALGERIENNE DE SAUVETAGE DE SOUCOURISME ET DES ACTIVITES SUBAQUATIQUE.</li>
+                        <li><b>2017 :</b> Baccalauréat sérié Sciences Expérimentales.</li>
+                        <li><b>2017 : </b>Baccalauréat UFC, Université de la formation continue.</li>
+
+                    </ul>
+
+                    <h2>Languages</h2>
+                    <ul>
+                        <li><b>Kabyle:</b> first language</li>
+                        <li><b>Arabic:</b> very well spoken and written</li>
+                        <li><b>French:</b> very well spoken and written</li>
+                        <li><b>English:</b> well spoken and written</li>
+                        <li><b>Japaness:</b> medium </li>
+                    
+                    </ul>
+                </aside>
+                <p>" I AM A FULL-STACK JS WEB DEVELOPMENT APPRENTICE WHO IS IN LOVE WITH PROGRAMMING, I ENJOY LEARNING ABOUT NEW TECHNOLOGIES AND HAVE PASSION FOR WEB DEVELOPEMENT, IF I AM NOT ON MY COMPUTER, I AM SWIMING, DIVING, READING OR SPENDING TIME WITH FAMILLY "</p>
+
+                
+            </section>
+            <section class="contact"> <!-- Contact Section (Using HTML Forms)--> 
+                <a name="contact"> </a>
+                <aside class="contenant">
+                    <img src="images/contact.jpg" alt="Contact">
+                    <div class="texte_centrer">
+                        <h1>Contact</h1>
+                    </div>
+                </aside>
+                <aside>
+                    <form method="post" #id="contact">
+                        <label for="Name">Name<span>*</span></label>
+                        <input type="text" name="Name" placeholder="Type your name here" required>
+                        <label for="E-mail">E-mail<span>*</span></label>
+                        <input type="email" name="E-mail" placeholder="xxx@outlook.fr" required>
+                        <label for="message">Message<span>*</span></label>
+                        <textarea name="message" required></textarea>
+                        <label for="checkbox"> <input type="checkbox" name="checkbox" class="checkbox" required>Has read and accept<span>*</span> </label>
+                        <input type="submit" name="submit" value="Send" class="button">
+                    </form>
+                </aside>
+                <aside class="last_msg">
+                    <i>This is the beginning of a beautiful relationship ... <br><br>  You who saw this page !!! Thank you very much !! From today, I'm already a friend. Do not hesitate to leave me a message, no matter how small. Let's have a good time together. See you ! From Syfax.</i>
+                </aside>
+            
+            </section>  
+           
+        </main>
+
+
+        <!--Create the footer-->
+        <section>
+            <footer class="footer">
+                    <a href="https://web.facebook.com/syfax.acherfouche" target="_blank"> <img src="images/facebook.png"></a>
+                    <a href="https://www.linkedin.com/in/syfax-acherfouche-2a8677165/" target="_blank"> <img src="images/linkedin.png"></a>
+                    <a href="https://twitter.com/Saakabyle" target="_blank"> <img src="images/twitter.png"></a>
+            </footer>  
+        </section>
+  </body>
+</html>
